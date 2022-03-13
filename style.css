@@ -1,18 +1,81 @@
-/* body {
-    color: black;
-    background-image: url(images/wall-background.jpg);
-    background-repeat: no-repeat;
-} */
-
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 .bg-image {
     height: 100vh;
-    /* width: 200px; */
+    background-color: black;
     background-image: url(images/wall-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
 
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+    font-family: "Sacramento", cursive;
+
+}
+h2 {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0px;
+    font-family: "Sacramento", cursive;
+}
+
+img {
+    width: 180px;
+    height: 50px;
+    position: relative;
+    top: -200px;
+    left: 20px;
+}
+
+.neonText {
+    /* animation: flicker 5s infinite alternate; */
+    color: #ffffff;
+    text-shadow:
+    0 0 4px rgba(0, 0, 0, 0.486),
+    0 0 11px rgba(3, 3, 3, 0.541),
+    0 0 19px #ffffffd7,
+    0 0 40px #ffffffc2,
+    0 0 80px #ffffffa9,
+    0 0 90px #ffffff00,
+    0 0 100px #ffffff0a,
+    0 0 150px #ffff0000;
+}
+
+
+.neonText2 {
+    animation: flicker 5s infinite alternate;
+    color: #ffff00;
+    
+}
+  
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px rgba(0, 0, 0, 0.486),
+        0 0 11px rgba(3, 3, 3, 0.541),
+        0 0 19px #ffff00d0,
+        0 0 40px #ffff00b2,
+        0 0 80px #ffff00,
+        0 0 90px #ffff00ad,
+        0 0 100px #ffff0094,
+        0 0 150px #ffff0000;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }

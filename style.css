@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+/* BACKGROUND IMAGE */
 .bg-image {
+    /* border: red;
+    border-style: solid; */
     height: 100vh;
     background-color: black;
     background-image: url(images/wall-background.jpg);
@@ -9,44 +13,86 @@
     background-position: center;
 }
 
+
+/* MARGIN RESET */
 * {
     margin: 0;
     padding: 0;
 }
 
+
+/* H TAGS */
+/* .Title {
+    border: white;
+    border-style: dotted;
+    position: absolute;
+    left: 40%;
+    top: 65px;
+    
+} */
+
 h1 {
-    font-size: 70px;
-    font-weight: bold;
+    /* border: rgb(255, 255, 255);
+    border-style: dotted; */
+    font-size: 95px;
+    font-weight: bolder;
     text-align: center;
-    padding-top: 25px;
     font-family: "Sacramento", cursive;
+    position: absolute;
+    left: 29%;
+    top: 130px;
 
 }
+
 h2 {
-    font-size: 80px;
-    font-weight: bold;
+    /* border: white;
+    border-style: dotted; */
+    font-size: 95px;
+    font-weight: bolder;
     text-align: center;
     padding-top: 0px;
     font-family: "Sacramento", cursive;
+    position: absolute;
+    left: 58%;
+    top: 130px;
 }
+
+h3 {
+    /* border: white;
+    border-style: dotted; */
+    font-size: 95px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 0px;
+    font-family: "Sacramento", cursive;
+    position: absolute;
+    left: 67%;
+    top: 130px;
+}
+
+
 
 img {
-    width: 180px;
-    height: 50px;
-    position: relative;
-    top: -200px;
-    left: 20px;
+    /* border: red;
+    border-style: dotted; */
+    width: 300px;
+    height: 90px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
+
+/* H1 & H2 ANIMATIONS */
 .neonText {
     color: #ffffff;
     text-shadow:
-    0 0 4px rgba(0, 0, 0, 0.486),
-    0 0 11px rgba(3, 3, 3, 0.541),
-    0 0 19px #ffffffd7,
-    0 0 40px #ffffffc2,
-    0 0 80px #ffffffa9,
-    0 0 90px #ffffff00,
+    0 0 4px rgb(0, 0, 0),
+    0 0 11px rgba(3, 3, 3, 0.644),
+    0 0 19px #00000063,
+    0 0 40px #ffffff,
+    0 0 80px #ffffffc9,
+    0 0 90px #ffffffd7,
     0 0 100px #ffffff0a,
     0 0 150px #ffff0000;
 }
@@ -57,13 +103,27 @@ img {
     color: #ffff00;
     
 }
+
+.neonText3 {
+    color: #ffffff;
+    text-shadow:
+    0 0 4px rgb(0, 0, 0),
+    0 0 11px rgba(3, 3, 3, 0.644),
+    0 0 19px #00000063,
+    0 0 40px #ffffff,
+    0 0 80px #ffffffc9,
+    0 0 90px #ffffffd7,
+    0 0 100px #ffffff0a,
+    0 0 150px #ffff0000;
+}
+
   
 @keyframes flicker {
     
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
   
         text-shadow:
-        0 0 4px rgba(0, 0, 0, 0.486),
+        0 0 4px rgb(0, 0, 0),
         0 0 11px rgba(3, 3, 3, 0.541),
         0 0 19px #ffff00d0,
         0 0 40px #ffff00b2,
@@ -79,92 +139,184 @@ img {
     }    
 }
 
+
+/* GRID SETUP */
 .container {
     display: grid;
-    place-items: center;
+    /* place-items: center; */
     grid-template-columns: 25% 25% 25% 25%;
     grid-column-gap: 0px;
     grid-row-gap: 50px;
-
+    position: absolute;
+    left: 20%;
+    top: 27%;
+  
 }
 
 .post-it-1 {
       height: 275px;
       width: 275px;
-      border: red;
-      border-style: dotted;
+      /* border: red;
+      border-style: dotted; */
       background-image: url(images/berry-post-it-v2.png);
       background-position: center;
-      background-size: cover;
-}
+      background-size: 160%;
+    }
 
 .post-it-2 {
     height: 275px;
     width: 275px;
-    border: red;
-    border-style: dotted;
+    /* border: blue;
+    border-style: dotted; */
     background-image: url(images/dellblue-post-it-v2.png);
     background-position: center;
-    background-size: cover;
+    background-size: 150%;
 }
 
 .post-it-3 {
     height: 275px;
     width: 275px;
-    border: red;
-    border-style: dotted;
+    /* border: yellow;
+    border-style: dotted; */
     background-image: url(images/purple-post-it-v2.png);
+    transform: rotate(-5deg);
     background-position: center;
-    background-size: cover;
+    background-size: 140%;
 }
 
 .post-it-4 {
     height: 275px;
     width: 275px;
-    border: red;
-    border-style: dotted;
+    /* border: orange;
+    border-style: dotted; */
     background-image: url(images/berry-post-it-v2.png);
     background-position: center;
-    background-size: cover;
+    background-size: 160%;
 }
 
 .post-it-5 {
     height: 275px;
     width: 275px;
-    border: red;
-    border-style: dotted;
+    /* border: cyan;
+    border-style: dotted; */
     background-image: url(images/lightblue-post-it-v2.png);
     background-position: center;
-    background-size: cover;
+    background-size: 150%;
 }
 
 .post-it-6 {
     height: 275px;
     width: 275px;
-    border: red;
-    border-style: dotted;
+    /* border: purple;
+    border-style: dotted; */
     background-image: url(images/purple-post-it-v2.png);
+    transform: rotate(-5deg);
     background-position: center;
-    background-size: cover;
+    background-size: 140%;
 }
 
 .post-it-7 {
     height: 275px;
     width: 275px;
-    border: red;
-    border-style: dotted;
+    /* border: green;
+    border-style: dotted; */
     background-image: url(images/midnightblue-post-it-v2.png);
     background-position: center;
-    background-size: cover;
+    background-size: 170%;
 }
 
 .post-it-8 {
     height: 275px;
     width: 275px;
-    border: red;
-    border-style: dotted;
+    /* border: pink;
+    border-style: dotted; */
     background-image: url(images/dellblue-post-it-v2.png);
     background-position: center;
-    background-size: cover;
+    background-size: 150%;
 }
 
+
+/* QR-sections 1 & 2 */
+.sidebar-1 {
+    width: 160px;
+    height: 250px;
+    /* border: yellow;
+    border-style: dotted; */
+    position: absolute;
+    top: 420px;
+    left: 150px;
+}
+
+.QRcode-1 {
+    width: 160px;
+    height: 150px;
+    background-image: url(images/qr-codev1.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+}
+
+h4 {
+    text-align: center;
+    width: 160px;
+    height: 65px;
+    /* border: rgb(255, 255, 255);
+    border-style: solid; */
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: -30px;
+
+}
+
+.sidebar-2 {
+    width: 160px;
+    height: 250px;
+    /* border: yellow;
+    border-style: dotted; */
+    position: absolute;
+    top: 420px;
+    right: 150px;
+}
+.QRcode-2 {
+    width: 160px;
+    height: 160px;
+    background-image: url(images/qr-codev2.png);
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+}
+
+h5 {
+    text-align: center;
+    width: 160px;
+    height: 65px;
+    /* border: rgb(255, 255, 255);
+    border-style: solid; */
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: -30px;
+}
+
+
+/* FOOTER HASHTAG */
+h6 {
+    width: auto;
+    height: 60px;
+    position: absolute;
+    /* border: rgb(255, 255, 255);
+    border-style: dotted; */
+    font-size: 45px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: none;
+    text-align: center;
+    bottom: 8px;
+    left: 35%;
+	text-shadow: 4px 3px 0px rgb(0, 0, 0);
+}

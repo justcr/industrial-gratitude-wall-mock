@@ -39,7 +39,6 @@ img {
 }
 
 .neonText {
-    /* animation: flicker 5s infinite alternate; */
     color: #ffffff;
     text-shadow:
     0 0 4px rgba(0, 0, 0, 0.486),
@@ -78,4 +77,94 @@ img {
     20%, 24%, 55% {        
         text-shadow: none;
     }    
-  }
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+
+}
+
+.post-it-1 {
+      height: 275px;
+      width: 275px;
+      border: red;
+      border-style: dotted;
+      background-image: url(images/berry-post-it-v2.png);
+      background-position: center;
+      background-size: cover;
+}
+
+.post-it-2 {
+    height: 275px;
+    width: 275px;
+    border: red;
+    border-style: dotted;
+    background-image: url(images/dellblue-post-it-v2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.post-it-3 {
+    height: 275px;
+    width: 275px;
+    border: red;
+    border-style: dotted;
+    background-image: url(images/purple-post-it-v2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.post-it-4 {
+    height: 275px;
+    width: 275px;
+    border: red;
+    border-style: dotted;
+    background-image: url(images/berry-post-it-v2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.post-it-5 {
+    height: 275px;
+    width: 275px;
+    border: red;
+    border-style: dotted;
+    background-image: url(images/lightblue-post-it-v2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.post-it-6 {
+    height: 275px;
+    width: 275px;
+    border: red;
+    border-style: dotted;
+    background-image: url(images/purple-post-it-v2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.post-it-7 {
+    height: 275px;
+    width: 275px;
+    border: red;
+    border-style: dotted;
+    background-image: url(images/midnightblue-post-it-v2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.post-it-8 {
+    height: 275px;
+    width: 275px;
+    border: red;
+    border-style: dotted;
+    background-image: url(images/dellblue-post-it-v2.png);
+    background-position: center;
+    background-size: cover;
+}
+

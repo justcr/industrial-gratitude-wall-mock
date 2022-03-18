@@ -154,14 +154,14 @@ img {
 }
 
 .post-it-1 {
-    background-image: url(images/ballsofpaper.png);
+    background-image: url(images/paper-animation.png);
     width: 275px;
     height: 275px;
     border: red;
     border-style: double;
-   -webkit-animation: 3.5s steps(5) walk-east;
-    animation: 3.5s steps(5) walk-east;
-    /* animation-fill-mode: forwards; */
+   -webkit-animation: 3.5s steps(4) walk-east;
+    animation: 3.5s steps(4) walk-east;
+    animation-fill-mode: forwards;
 
    
     /* -webkit-animation: 5s sprite;
@@ -174,7 +174,7 @@ img {
       background-position: 0px;
     }
     to {
-      background-position: -1375px;
+      background-position: -1100px;
     }
 }
   
@@ -183,7 +183,7 @@ img {
       background-position: 0px;
     }
     to {
-      background-position: -1375px;
+      background-position: -1100px;
     }
 }
 
